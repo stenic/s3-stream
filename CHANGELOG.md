@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/stenic/s3-stream/compare/v1.0.1...v1.0.2) (2022-06-29)
+
+
+### Bug Fixes
+
+* Prevent duplicate builds ([c49b166](https://github.com/stenic/s3-stream/commit/c49b1663b60a2fa5bf00ec4ab00666c0ee7cdf95))
+* Remove deprecated target ([6968a06](https://github.com/stenic/s3-stream/commit/6968a06792a07afb1dcc32f461afda0515974ab1))
+
 ## [1.0.1](https://github.com/stenic/s3-stream/compare/v1.0.0...v1.0.1) (2022-06-29)
 
 
