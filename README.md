@@ -1,13 +1,13 @@
-# 3s-stream
+# s3-stream
 
-3s-stream does things.
+s3-stream does things.
 
 
 ## Usage
 
 ```bash
 $ export AWS_PROFILE=myprofile
-$ 3s-stream -bucket bucketwithlogs -prefix datadog/dt=20220628/hour=23 > out.log
+$ s3-stream -bucket bucketwithlogs -prefix datadog/dt=20220628/hour=23 > out.log
 Setting up session
 Fetching object list
 Streaming datadog/dt=20220628/hour=23/archive_231534.6437.xYf87FT9QJ-3AO5IF75aeA.json.gz
@@ -25,42 +25,42 @@ Finished streaming
 
 ```shell
 # homebrew
-brew install stenic/tap/3s-stream
+brew install stenic/tap/s3-stream
 
 # gofish
 gofish rig add https://github.com/stenic/fish-food
-gofish install github.com/stenic/fish-food/3s-stream
+gofish install github.com/stenic/fish-food/s3-stream
 
 # scoop
-scoop bucket add 3s-stream https://github.com/stenic/scoop-bucket.git
-scoop install 3s-stream
+scoop bucket add s3-stream https://github.com/stenic/scoop-bucket.git
+scoop install s3-stream
 
 # go
-go install github.com/stenic/3s-stream@latest
+go install github.com/stenic/s3-stream@latest
 ```
 
-> For even more options, check the [releases page](https://github.com/stenic/3s-stream/releases).
+> For even more options, check the [releases page](https://github.com/stenic/s3-stream/releases).
 
 
 ## Run
 
 ```shell
 # Installed
-3s-stream -h
+s3-stream -h
 ```
 
 
 ## Documentation
 
 ```shell
-3s-stream -h
+s3-stream -h
 ```
 
 ## Badges
 
-[![Release](https://img.shields.io/github/release/stenic/3s-stream.svg?style=for-the-badge)](https://github.com/stenic/3s-stream/releases/latest)
-[![Software License](https://img.shields.io/github/license/stenic/3s-stream?style=for-the-badge)](./LICENSE)
-[![Build status](https://img.shields.io/github/workflow/status/stenic/3s-stream/Release?style=for-the-badge)](https://github.com/stenic/3s-stream/actions?workflow=build)
+[![Release](https://img.shields.io/github/release/stenic/s3-stream.svg?style=for-the-badge)](https://github.com/stenic/s3-stream/releases/latest)
+[![Software License](https://img.shields.io/github/license/stenic/s3-stream?style=for-the-badge)](./LICENSE)
+[![Build status](https://img.shields.io/github/workflow/status/stenic/s3-stream/Release?style=for-the-badge)](https://github.com/stenic/s3-stream/actions?workflow=build)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=for-the-badge)](https://conventionalcommits.org)
 
 ## License
