@@ -2,6 +2,25 @@
 
 3s-stream does things.
 
+
+## Usage
+
+```bash
+$ export AWS_PROFILE=myprofile
+$ 3s-stream -bucket bucketwithlogs -prefix datadog/dt=20220628/hour=23 > out.log
+Setting up session
+Fetching object list
+Streaming datadog/dt=20220628/hour=23/archive_231534.6437.xYf87FT9QJ-3AO5IF75aeA.json.gz
+...
+Streaming datadog/dt=20220628/hour=23/archive_231810.4890.gvAjR_OjReydSd-IO1bOkQ.json.gz
+
+Finished streaming
+  Data: 1.1 GiB 
+  Fetched 95.2 MiB in 722 files 
+  Duration: 2m18.296981082s
+```
+
+
 ## Installation
 
 ```shell
@@ -28,23 +47,6 @@ go install github.com/stenic/3s-stream@latest
 ```shell
 # Installed
 3s-stream -h
-```
-
-## Usage
-
-```bash
-$ export AWS_PROFILE=myprofile
-$ 3s-stream -bucket bucketwithlogs -prefix datadog/dt=20220628/hour=23 > out.log
-Setting up session
-Fetching object list
-Streaming datadog/dt=20220628/hour=23/archive_231534.6437.xYf87FT9QJ-3AO5IF75aeA.json.gz
-...
-Streaming datadog/dt=20220628/hour=23/archive_231810.4890.gvAjR_OjReydSd-IO1bOkQ.json.gz
-
-Finished streaming
-  Data: 1.1 GiB 
-  Fetched 95.2 MiB in 722 files 
-  Duration: 2m18.296981082s
 ```
 
 
